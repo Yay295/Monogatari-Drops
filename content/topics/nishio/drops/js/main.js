@@ -386,9 +386,9 @@ function closeOpening () {
       $("#overlay_image_1, #overlay_image_2").show();
       $overlay.show();
 
-      $("#share_individual").attr("href", "https://web.archive.org/web/20190413152707/https://twitter.com/intent/tweet?text="+encodeURIComponent(sharetext));
+      $("#share_individual").attr("href","https://twitter.com/intent/tweet?text="+encodeURIComponent(sharetext));
 
-      // $('.social').fadeOut();
+      //$('.social').fadeOut();
       $('.social .facebook, .social .twitter.global').hide();
       $('.social .twitter.individual, .social .share_info').show();
 
@@ -410,10 +410,10 @@ function closeOpening () {
       } else {
         $closeBtn.removeClass("black").addClass("white");
       }
-      $("#overlay_image_1").css("background-image", "url(/content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg)");
-      $("#overlay_image_2").css("background-image", "url(/content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg)");
-      $("#overlay_image_3").css("background-image", "url(/content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg)");
-      $("#overlay_image_1, #overlay_image_2").show();
+      $("#overlay_image_1").css("background-image","url(./content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg)");
+      $("#overlay_image_2").css("background-image","url(./content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg)");
+      $("#overlay_image_3").css("background-image","url(./content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg)");
+      $("#overlay_image_1,#overlay_image_2").show();
     });
 
     /**
@@ -483,12 +483,14 @@ function closeOpening () {
     var hitagi_animation = function() {
       var intervalID;
       var $hitagi_img = $("#hitagi img");
-      var images = [ "/content/topics/nishio/drops/imgs/animation/1.png",
-      "/content/topics/nishio/drops/imgs/animation/2.png",
-      "/content/topics/nishio/drops/imgs/animation/3.png",
-      "/content/topics/nishio/drops/imgs/animation/4.png",
-      "/content/topics/nishio/drops/imgs/animation/5.png",
-      "/content/topics/nishio/drops/imgs/animation/6.png" ];
+      var images = [
+          "./content/topics/nishio/drops/imgs/animation/1.png",
+          "./content/topics/nishio/drops/imgs/animation/2.png",
+          "./content/topics/nishio/drops/imgs/animation/3.png",
+          "./content/topics/nishio/drops/imgs/animation/4.png",
+          "./content/topics/nishio/drops/imgs/animation/5.png",
+          "./content/topics/nishio/drops/imgs/animation/6.png"
+      ];
       var $images = [];
       var cnt = 0;
 
@@ -624,9 +626,9 @@ function closeOpening () {
             var kime = new Image();
             var img1 = new Image();
             var img2 = new Image();
-            kime.src = "/content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg";
-            img1.src = "/content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg";
-            img2.src = "/content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg";
+            kime.src = "./content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg";
+            img1.src = "./content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg";
+            img2.src = "./content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg";
           });
           $(document).on('scrolled', function(){
             if(
@@ -701,31 +703,6 @@ function closeOpening () {
       }
       return false;
     });
-
-
   });
 })(jQuery);
-
-
 }
-/*
-     FILE ARCHIVED ON 15:27:07 Apr 13, 2019 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 20:22:01 Apr 30, 2022.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 130.964
-  exclusion.robots: 0.094
-  exclusion.robots.policy: 0.086
-  RedisCDXSource: 2.097
-  esindex: 0.008
-  LoadShardBlock: 105.745 (3)
-  PetaboxLoader3.datanode: 100.932 (5)
-  CDXLines.iter: 20.35 (3)
-  load_resource: 56.045 (2)
-  PetaboxLoader3.resolve: 32.763
-*/
