@@ -32,7 +32,7 @@ body, html {
   position: absolute;
   width: 44px;
   height: 45px;
-  background: url(./content/topics/nishio/drops/imgs/close_white.jpg) no-repeat left top;
+  background: url(./content/topics/nishio/drops/imgs/close_white.png) no-repeat left top;
   left: 40px;
   top: 75px;
   z-index: 10;
