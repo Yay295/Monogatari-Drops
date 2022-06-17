@@ -410,9 +410,9 @@ function closeOpening () {
       } else {
         $closeBtn.removeClass("black").addClass("white");
       }
-      $("#overlay_image_1").css("background-image","url(./content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg)");
-      $("#overlay_image_2").css("background-image","url(./content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg)");
-      $("#overlay_image_3").css("background-image","url(./content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg)");
+      $("#overlay_image_1").css("background-image","url(content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg)");
+      $("#overlay_image_2").css("background-image","url(content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg)");
+      $("#overlay_image_3").css("background-image","url(content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg)");
       $("#overlay_image_1,#overlay_image_2").show();
     });
 
@@ -484,12 +484,12 @@ function closeOpening () {
       var intervalID;
       var $hitagi_img = $("#hitagi img");
       var images = [
-          "./content/topics/nishio/drops/imgs/animation/1.png",
-          "./content/topics/nishio/drops/imgs/animation/2.png",
-          "./content/topics/nishio/drops/imgs/animation/3.png",
-          "./content/topics/nishio/drops/imgs/animation/4.png",
-          "./content/topics/nishio/drops/imgs/animation/5.png",
-          "./content/topics/nishio/drops/imgs/animation/6.png"
+          "content/topics/nishio/drops/imgs/animation/1.png",
+          "content/topics/nishio/drops/imgs/animation/2.png",
+          "content/topics/nishio/drops/imgs/animation/3.png",
+          "content/topics/nishio/drops/imgs/animation/4.png",
+          "content/topics/nishio/drops/imgs/animation/5.png",
+          "content/topics/nishio/drops/imgs/animation/6.png"
       ];
       var $images = [];
       var cnt = 0;
@@ -626,9 +626,9 @@ function closeOpening () {
             var kime = new Image();
             var img1 = new Image();
             var img2 = new Image();
-            kime.src = "./content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg";
-            img1.src = "./content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg";
-            img2.src = "./content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg";
+            kime.src = "content/topics/nishio/drops/imgs/scene/kime/"+num+".jpg";
+            img1.src = "content/topics/nishio/drops/imgs/scene/low/"+num+"_1.jpg";
+            img2.src = "content/topics/nishio/drops/imgs/scene/low/"+num+"_2.jpg";
           });
           $(document).on('scrolled', function(){
             if(
